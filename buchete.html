@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<link rel="stylesheet" href="path/to/fontawesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="buchetee.css">
+    <link rel="stylesheet" href="styleCart.css">
+    <script defer src="cart.js"></script>
+    <title>Buchete</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+    <div class="container">
+      <img class="logo" src="logo.png">
+      
+      <div class ="nume">Flower Power</div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buchete.html">Buchete</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </ul>
+      </div>
+    </div>
+</nav>
+    <div class ="titlu">Alege buchetul tau preferat pentru tine sau pentru cineva drag tie</div>
+    <div class="overflow-auto">
+
+  <div class="produse w-100">
+    <div class="row mx-auto mb-5 ">
+      
+      <div id="produs" class="produs text-center col-lg px-3">
+        <img class="imagineProdus mb-3" src="buchete/b1.jpg">
+        <h5 id="nume" class="numeProdus">Buchet Classy </h5>
+        <span class="pretProdus">300</span>
+        <button id="myBtn" type="submit" class="buyBtn" onclick="goTo()">Detalii</butt>
+        <button class="Cumpara addcart">Cumpara Acum</button>
+      </div>
+      
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b6.jpg">
+        <h5 class="numeProdus">Buchet Safe </h5>
+        <span class="pretProdus">200</span>
+        <button class="buyBtn" onclick="goTo1()">Detalii</button>
+        <button class="Cumpara addcart">Cumpara Acum</button>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b5.jpg">
+        <h5 class="numeProdus"> Buchet Red Finesse</h5>
+        <span class="pretProdus">150</span>
+        <button class="buyBtn" onclick="goTo2()">Detalii</butt>
+        <button class="Cumpara addcart">Cumpara Acum</button>
+      
+     </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b17.jpg">
+        <h5 class="numeProdus"> Buchet Red Aesthetic</h5>
+        <span class="pretProdus">200</span>
+        <button class="buyBtn" onclick="goTo3()">Detalii</butt>
+        <button class="Cumpara addcart">Cumpara Acum</button>
+      </div>
+    
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b10.jpg">
+        <h5 class="numeProdus">Buchet Happy </h5>
+        <h4 class="pretProdus">200</h4>
+        <button class="buyBtn" onclick="goTo4()">Detalii</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b13.jpg">
+        <h5 class="numeProdus">Buchet Purple Dream </h5>
+        <h4 class="pretProdus">280</h4>
+        <button class="buyBtn" onclick="goTo5()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b12.jpg">
+        <h5 class="numeProdus">Buchet Wifey </h5>
+        <h4 class="pretProdus">300</h4>
+        <button class="buyBtn" onclick="goTo6()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b11.jpg">
+        <h5 class="numeProdus">Buchet Magic Nature</h5>
+        <h4 class="pretProdus">550</h4>
+        <button class="buyBtn" onclick="goTo7()">Comanda acum</butt>
+      </div>
+    
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b22.png">
+        <h5 class="numeProdus">Buchet Orange Petal </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo8()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b24.png">
+        <h5 class="numeProdus">Buchet Daiana </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo9()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b25.png">
+        <h5 class="numeProdus">Buchet Silvia </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo10()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b26.png">
+        <h5 class="numeProdus">Buchet Clara </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo11()">Comanda acum</butt>
+      </div>
+
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b18.jpg">
+        <h5 class="numeProdus">Buchet Pink Universe</h5>
+        <h4 class="pretProdus">300</h4>
+        <button class="buyBtn"onclick="goTo12()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b19.png">
+        <h5 class="numeProdus">Buchet Paradise </h5>
+        <h4 class="pretProdus">200</h4>
+        <button class="buyBtn" onclick="goTo13()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b21.png">
+        <h5 class="numeProdus">Buchet Heaven </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo14()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b27.png">
+        <h5 class="numeProdus">Buchet Julia </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo15()">Comanda acum</butt>
+      </div>
+
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b2.jpg">
+        <h5 class="numeProdus">Buchet  Wealthy </h5>
+        <h4 class="pretProdus">300</h4>
+        <button class="buyBtn" onclick="goTo16()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b3.jpg">
+        <h5 class="numeProdus">Buchet Pinky Promise </h5>
+        <h4 class="pretProdus">300</h4>
+        <button class="buyBtn" onclick="goTo17()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b4.jpg">
+        <h5 class="numeProdus">Buchet Majesty </h5>
+        <h4 class="pretProdus">200</h4>
+        <button class="buyBtn" onclick="goTo18()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchet.jpg">
+        <h5 class="numeProdus">Buchet Dream </h5>
+        <h4 class="pretProdus">350</h4>
+        <button class="buyBtn" onclick="goTo19()">Comanda acum</butt>
+      </div>
+
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b8.jpg">
+        <h5 class="numeProdus">Buchet Color Boom </h5>
+        <h4 class="pretProdus">350</h4>
+        <button class="buyBtn" onclick="goTo20()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b14.jpg">
+        <h5 class="numeProdus">Buchet Special </h5>
+        <h4 class="pretProdus">180</h4>
+        <button class="buyBtn" onclick="goTo21()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b9.jpg">
+        <h5 class="numeProdus">Buchet Missing you </h5>
+        <h4 class="pretProdus">300</h4>
+        <button class="buyBtn" onclick="goTo22()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b15.jpg">
+        <h5 class="numeProdus">Buchet Lalele </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo23()">Comanda acum</butt>
+      </div>
+
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b23.jpg">
+        <h5 class="numeProdus">Buchet Oana </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo24()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b7.jpg">
+        <h5 class="numeProdus">Buchet Mira </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo25()">Comanda acum</butt>
+      </div>
+      <div class="produs text-center col-lg ">
+        <img class="imagineProdus mb-3" src="buchete/b16.jpg">
+        <h5 class="numeProdus">Buchet Lara </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo26()">Comanda acum</button>
+      </div>
+      <div class="produs text-center col-lg">
+        <img class="imagineProdus mb-3" src="buchete/b20.jpg">
+        <h5 class="numeProdus">Buchet Delice </h5>
+        <h4 class="pretProdus">100</h4>
+        <button class="buyBtn" onclick="goTo27()">Comanda acum</button>
+        </div>
+      
+  </div>
+</div>
+
+  <div class="cart container">
+    <h4 class="titluCart">Produsele tale</h4>
+    <button class="back" onclick="goTo0()">Inapoi la cumparaturi</button>
+    <div class="cart-content">
+        
+        
+    </div>
+    <div class="Total">
+        <div class="total-title">Pret total</div>
+        <div class="total-pret">$0</div>
+    </div>
+    <button type="button" class="btnComanda">Comanda</button>
+   </div>
+  
+    <script>
+
+      function goTo()
+      {
+       window.location="detb1.html";
+      }
+      function goTo1()
+      {
+       window.location="detb2.html";
+      }
+      function goTo2()
+      {
+       window.location="detb3.html";
+      }
+      function goTo3()
+      {
+       window.location="detb4.html";
+      }
+      function goTo4()
+      {
+       window.location="detb5.html";
+      }
+      function goTo5()
+      {
+       window.location="detb6.html";
+      }
+      function goTo6()
+      {
+       window.location="detb7.html";
+      }
+      function goTo7()
+      {
+       window.location="detb8.html";
+      }
+      function goTo8()
+      {
+       window.location="detb9.html";
+      }
+      function goTo9()
+      {
+       window.location="detb10.html";
+      }
+      function goTo10()
+      {
+       window.location="detb11.html";
+      }
+      function goTo11()
+      {
+       window.location="detb12.html";
+      }
+      function goTo12()
+      {
+       window.location="detb13.html";
+      }
+      function goTo13()
+      {
+       window.location="detb14.html";
+      }
+      function goTo14()
+      {
+       window.location="detb15.html";
+      }
+      function goTo15()
+      {
+       window.location="detb16.html";
+      }
+      function goTo16()
+      {
+       window.location="detb17.html";
+      }
+      function goTo17()
+      {
+       window.location="detb18.html";
+      }
+      function goTo18()
+      {
+       window.location="detb19.html";
+      }
+      function goTo19()
+      {
+       window.location="detb20.html";
+      }
+      function goTo20()
+      {
+       window.location="detb21.html";
+      }function goTo21()
+      {
+       window.location="detb22.html";
+      }
+      function goTo22()
+      {
+       window.location="detb23.html";
+      }
+      function goTo23()
+      {
+       window.location="detb24.html";
+      }
+      function goTo24()
+      {
+       window.location="detb25.html";
+      }
+      function goTo25()
+      {
+       window.location="detb26.html";
+      }
+      function goTo26()
+      {
+       window.location="detb27.html";
+      }
+      function goTo27()
+      {
+       window.location="detb28.html";
+      }
+    </script>
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  </body>
+</html>
